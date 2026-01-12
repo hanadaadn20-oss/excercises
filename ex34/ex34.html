@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="hy">
+        <li>welcome</li>
+        <li>hello world!</li>
+    </ul>
+    <button onclick="word()">add word</button>
+    <button onclick="remove()">remove word</button>
+    <script>
+        const list =document.querySelector('hy')
+        function word(){
+            const add = document.createElement('li')
+            add.textContent="hello guys!!"
+            hy.appendChild(add)
+        }
+        // add()
+function remove() {
+    hy.removeChild(hy.lastChild)
+}
+    </script>
+</body>
+</html>
